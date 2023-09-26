@@ -369,6 +369,7 @@ export const Game = ({ navigation }) => {
             <ImageBackground
                 style={{ flex: 1, backgroundColor: 'yellow', alignItems: 'center' }}
                 source={require('../assets/background.png')} resizeMode='cover'
+                onLoadEnd={() => console.log('han ustad')}
             >
                 <StatusbarH />
                 <View style={{ flex: 1, justifyContent: 'space-between', }}>
